@@ -1,0 +1,5 @@
+name = Pet
+description = Display pet.
+package = Display Pet Module
+core = 7.x
+file[] = pet.module

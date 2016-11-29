@@ -1,0 +1,58 @@
+<?php
+
+function name_menu() {
+    $friends = array('Meredith', 'Zach', 'Alex');
+
+    foreach ($friends as $name) {
+        $items[$name] = array(
+            'title' => $name,
+            'page callback' => 'display_name',
+            'access callback' => TRUE,
+            'type' => MENU_NORMAL_ITEM,
+        );
+    }
+    // $items['meredith'] = array(
+    //     'title' => 'Meredith',
+    //     'page callback' => 'display_name',
+    //     'access callback' => TRUE,
+    //     'type' => MENU_NORMAL_ITEM,
+    // );
+    //
+    // $items['zach'] = array(
+    //     'title' => 'Zach',
+    //     'page callback' => 'display_name',
+    //     'access callback' => TRUE,
+    //     'type' => MENU_NORMAL_ITEM,
+    // );
+    //
+    // $items['hello_friend'] = array(
+    //     'title' => 'Hello Friend',
+    //     'page callback' => 'display_name',
+    //     'access callback' => TRUE,
+    //     'type' => MENU_NORMAL_ITEM,
+    // );
+    return $items;
+}
+
+function display_name(){
+    return 'hello';
+}
+
+// $friends['zach'] = array(
+//     'title' => "Zach",
+//     'page callback' => 'display_zach',
+//     'access callback' => TRUE,
+//     'type' => MENU_NORMAL_ITEM,
+// );
+// $friends['alex'] = array(
+//     'title' => "Alex",
+//     'page callback' => 'display_alex',
+//     'access callback' => TRUE,
+//     'type' => MENU_NORMAL_ITEM,
+// );
+// function display_zach() {
+//     return '<p>Hey Zach</p>';
+// }
+// function display_alex() {
+//     return '<p>Hey Alex</p>';
+// }

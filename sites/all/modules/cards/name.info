@@ -1,0 +1,5 @@
+name = Name
+description = Display name.
+package = Display Name Module
+core = 7.x
+file[] = name.module
